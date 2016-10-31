@@ -21,7 +21,7 @@ void randomArray(double a[], int const N)
 	int i = 0;
 	while (i < N)
 	{
-		a[i] = (rand() % (2 * N + 1) - N);
+		a[i] = (rand() % (20 * N + 1) - N*10)/10.0;
 		i++;
 	}
 }
