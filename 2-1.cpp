@@ -10,7 +10,7 @@ void initRandomArray(int arr[], int const N)
 	int i = 0;
 	while (i < N)
 	{
-		arr[i] = (rand() % 1001 - 500) / 10.00;
+		arr[i] = (rand() % N) / 10.00;
 		i++;
 		cout << arr[i];
 	}
