@@ -5,31 +5,17 @@
 
 using namespace std;
 
-void initRandomArray(int arr[], int const N)
+void initRandomArray(double arr[], int const N)
 {
 	int i = 0;
 	while (i < N)
 	{
-		arr[i] = (rand() % N) / 10.00;
+		arr[i] = (rand() % (N*10+1)) / 10.0;
 		i++;
-		cout << arr[i];
 	}
 }
 
-
-void printArray(int arr[], int const N)
-{
-	int i = 0;
-	while (i < N)
-	{
-		cout << arr[i] << ' ';
-		i++;
-	}
-	cout << endl;
-}
-
-
-void flipАrray(int arr[], int const N)
+void flipАrray(double arr[], int const N)
 {
 	int i = 0, j = N - 1;
 	while (i < N / 2)
@@ -44,10 +30,8 @@ int main()
 {
 	srand(time(0));
 	int const N = 10;
-	int arr[N];
+	double arr[N];
 	initRandomArray(arr, N);
-	printArray(arr, N);
 	flipАrray(arr, N);
-	printArray(arr, N);
 	system("pause");
 }
