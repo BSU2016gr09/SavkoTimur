@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void flipАrray(int a[], int const N)
+void flipАrray(double a[], int const N)
 {
 	int i = 0, j = N - 1;
 	while (i < N / 2)
@@ -16,7 +16,7 @@ void flipАrray(int a[], int const N)
 	}
 }
 
-void randomArray(int a[], int const N)
+void randomArray(double a[], int const N)
 {
 	int i = 0;
 	while (i < N)
@@ -26,7 +26,7 @@ void randomArray(int a[], int const N)
 	}
 }
 
-void shiftRightArray(int a[], int const N, int b[])
+void shiftRightArray(double a[], int const N, double b[])
 {
 	int i = N - 1;
 	while (i >= 0)
@@ -36,7 +36,7 @@ void shiftRightArray(int a[], int const N, int b[])
 	}
 }
 
-void shiftLeftArray(int a[], int const N, int b[])
+void shiftLeftArray(double a[], int const N, double b[])
 {
 	int i = 0;
 	while (i < N)
@@ -51,7 +51,7 @@ int main()
 {
 	srand(time(0));
 	int const N = 10;
-	int a[N], b[N];
+	double a[N], b[N];
 	randomArray(a, N);
 	shiftLeftArray(a, N, b);
 	shiftLeftArray(a, N, b);
