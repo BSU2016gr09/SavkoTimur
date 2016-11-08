@@ -1,4 +1,5 @@
-﻿#include "iostream"
+//Построить график функции y=sin(2x)/x на промежутке [-6,6] с шагом 0.1
+#include "iostream"
 #include "iomanip" 
 #include "cmath"
 
