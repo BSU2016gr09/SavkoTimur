@@ -28,7 +28,7 @@ void randomArray(double a[], int const N)
 
 void shiftRightArray(double a[], int const N, double b[], int k)
 {
-	k = k % 10;
+	k = k % 10;//надо k%N
 	int i = N - 1;
 	while (i >= 0)
 	{
