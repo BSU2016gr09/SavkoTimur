@@ -56,7 +56,7 @@ int main()
 	int k;
 	cin >> k;
 	randomArray(a, N);
-	shiftLeftArray(a, N, b, k);
+	shiftLeftArray(a, N, b, k);//неверно работает. Проверяй....
 	shiftLeftArray(a, N, b, k);
 	system("pause");
 }
