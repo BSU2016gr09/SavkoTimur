@@ -56,7 +56,7 @@ int numberPop(int stack[], int &top)
 void printArray(int arr[], int top)
 {
 	int i = 0;
-	while (i < top)
+	while (i < top) 
 	{
 		cout << arr[i] << ' ';
 		i++;
