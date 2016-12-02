@@ -30,7 +30,7 @@ int main()
 {
 	srand(time(0));
 	int const N = 10;
-	double arr[N];
+	double arr[N];//Массив целых чисел размера N 
 	initRandomArray(arr, N);
 	flipАrray(arr, N);
 	system("pause");
