@@ -26,7 +26,7 @@ void randomArray(double a[], int const N)
 	}
 }
 
-void shiftRightArray(double a[], int const N, double b[])
+void shiftRightArray(double a[], int const N, double b[])//плохо!!! Надо в массиве А. Не нужет доп.массив!!!!
 {
 	int i = N - 1;
 	while (i >= 0)
@@ -44,7 +44,7 @@ void shiftLeftArray(double a[], int const N, double b[])
 		b[(N - i) % N] = a[i];
 		i++;
 	}
-	flipАrray(b, N);
+	flipАrray(b, N);//круть!!!!!
 }
 
 int main()
