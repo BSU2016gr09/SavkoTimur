@@ -53,7 +53,7 @@ int main()
 	int const N = 10;
 	int a[N];
 	randomArray(a, N);
-	sortArray(a, N);
+	sortArray(a, N);//возможно лишнее?????
 	checkMaxReplays(a, N);
 	system("pause");
 }
