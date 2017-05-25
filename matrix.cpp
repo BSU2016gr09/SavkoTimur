@@ -55,7 +55,7 @@ public:
 		}
 		return *this;
 	}
-
+//оператор умножения надо было бы!!!
 	void enter() {
 		for (int i = 0;i < 3;i++) {
 			for (int j = 0;j < 3;j++)
