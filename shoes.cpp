@@ -1,4 +1,4 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <iomanip>
 
@@ -17,13 +17,13 @@ public:
 
 	Shoes(char*art, char*name) {
 		size = 0;amount = 0;cost = 0;
-		strcpy(this->art, art);
-		strcpy(this->name, name);
+		strcpy(this->art, art);//опасно. Вдруг размер будет >5
+		strcpy(this->name, name);//опасно. Вдруг размер будет >10
 	}
 	Shoes(char*art, char*name, int size, int amount, int cost) {
 		this->size = size;this->amount = amount;this->cost = cost;
-		strcpy(this->art, art);
-		strcpy(this->name, name);
+		strcpy(this->art, art);//опасно. Вдруг размер будет >5
+		strcpy(this->name, name);//опасно. Вдруг размер будет >10
 	}
 
 
@@ -47,7 +47,7 @@ public:
 
 	void setAmount() {
 		cout << "Type amount:\n";
-		cin >> amount;
+		cin >> amount;//опасно. Вдруг будет <0
 	}
 	void setCost() {
 		cout << "Type cost:\n";
@@ -85,7 +85,7 @@ void main() {
 	int pairs;
 	cout << "How many pairs do you want to enter?\n";
 	cin >> pairs;
-	if (pairs > 10) giveMemory(arr, pairs);
+	if (pairs > 10) giveMemory(arr, pairs);//Не сработает!!!! UB!!!!!!!!!!!!!!!!!!!
 	for (int i = 0;i < pairs;i++) {
 		cin.ignore();
 		arr[i].setAll();
